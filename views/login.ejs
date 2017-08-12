@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/loginstyle.css' />
+</head>
+<body style="text-align: center;">
+<h1> Welcome to the Poppro Access Portal!</h1>
+<p>Please log in.</p>
+
+<form method="post">
+    <input type ="text" placeholder="Username" name ="username"> </input>
+    <br>
+    <br>
+    <input type ="password" placeholder="Password" name="password"> </input>
+    <br>
+    <br>
+    <input type ="submit"> </input>
+</form>
+<h3 style="color: crimson"> <%= (errors) %> </h3>
+</body>
+</html>

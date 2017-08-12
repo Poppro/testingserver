@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  background: url('/p/images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+hr {
+  color: slategrey;
+  border-color: slategrey;
+}
+
+
+
+.main {
+  max-height: 100%;
+  width:100%;
+  position: absolute;
+  animation-duration: .5s;
+  height: 100%;
+}
+
+.main-content {
+  position:absolute;
+  left: 15%;
+  padding: 20px;
+  width: 70%;
+  max-height: 95%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  height: 30%;
+  top: 300px;
+}
+
+.project-view {
+  color: #ffffff;
+  justify-content: left;
+  position: absolute;
+  width: 0;
+  overflow: auto;
+  max-height: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #000000;
+  text-align: center;
+  animation-duration: .5s;
+  float:left;
+  overflow-x: hidden;
+}
+
+.nav_buttons {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  line-height: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+@keyframes navslidein {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
+@keyframes navslideout {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes mainslidein {
+  from {
+    left: 0%;
+    width: 100%;
+  }
+
+  to {
+    left: 10%;
+    width: 90%;
+  }
+}
+
+@keyframes mainslideout {
+  from {
+    width: 90%;
+    left: 10%;
+  }
+
+  to {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes rotate90 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotaten90 {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  max-height: 50px;
+  height: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  background-color: #4d4d4d;
+}
